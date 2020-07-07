@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel=" stylesheet" href="animate.css">
+    <link rel="stylesheet" href="animation_style.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2c36b1428e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="JennaSue.ttf">
+
+    <link rel="stylesheet" href="./circle/css/normalize.css">
+    <link rel="stylesheet" href="./circle/dist/css/asPieProgress.css">
+    <style type="text/css">
+        .pie_progress {
+            width: 160px;
+            margin: 10px auto;
+        }
+
+        @media all and (max-width: 768px) {
+            .pie_progress {
+                width: 80%;
+                max-width: 300px;
+            }
+        }
+    </style>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script> -->
+    <!-- <link href="css-circular-prog-bar.css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <div class="loaderr" id="loader">
+        <div class="loading">
+            <div class="finger finger-1" id="loaderIn">
+                <div class="finger-item">
+                    <span></span><i></i>
+                </div>
+            </div>
+            <div class="finger finger-2">
+                <div class="finger-item">
+                    <span></span><i></i>
+                </div>
+            </div>
+            <div class="finger finger-3">
+                <div class="finger-item">
+                    <span></span><i></i>
+                </div>
+            </div>
+            <div class="finger finger-4">
+                <div class="finger-item">
+                    <span></span><i></i>
+                </div>
+            </div>
+            <div class="last-finger">
+                <div class="last-finger-item"><i></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="dcontent" style="display: none;"> -->
+
+
+    <div class="topBar">
+        <div class="topBar-con container">
+
+            <div class="row">
+                <p> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                    </svg>+1(917)4709709</p>
+                <p> <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg> mail@domain.com </a> </p>
+            </div>
+            <div>
+                <span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Images/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="one" class="nav-item dropdown" onmouseover="dropdown(`1`)" onmouseout="dropdownOut(`1`)">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Skin Care &nbsp; <img src="./Images/droparrow.jpg">
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cleansers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Exfoilators</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eye Treatments</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Face Oils</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Lip Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Masks & Peels</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Moisturisers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Serums</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Spot Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Toners</a>
+                        </div>
+
+                        <div id="1" class="droppdownn">
+                            <img src="./Images/uppp.jpg">
+                            <div class="first">
+                                <div>Cleansers</div>
+                                <div>Exfoilators</div>
+                                <div>Eye Treatments</div>
+                                <div>Face Oils</div>
+                                <div>Lip Treatment</div>
+                            </div>
+                            <div class="second">
+                                <div>Masks & Peels</div>
+                                <div>Moisturisers</div>
+                                <div>Serums</div>
+                                <div>Spot Treatment</div>
+                                <div>Toners</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="two" class="nav-item dropdown" onmouseover="dropdown(`2`)" onmouseout="dropdownOut(`2`)">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Brands &nbsp; <img src="./Images/droparrow.jpg">
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cleansers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Exfoilators</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eye Treatments</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Face Oils</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Lip Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Masks & Peels</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Moisturisers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Serums</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Spot Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Toners</a>
+                        </div>
+
+                        <div id="2" class="droppdownn2">
+                            <img src="./Images/uppp.jpg">
+                            <div class="first">
+                                <div>Cleansers</div>
+                                <div>Exfoilators</div>
+                                <div>Eye Treatments</div>
+                                <div>Face Oils</div>
+                                <div>Lip Treatment</div>
+                            </div>
+                            <div class="second">
+                                <div>Masks & Peels</div>
+                                <div>Moisturisers</div>
+                                <div>Serums</div>
+                                <div>Spot Treatment</div>
+                                <div>Toners</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item startQuiz">
+                        <a style="border: none;" class="nav-link" href="#"><button class="quiz">
+                                Start Skin Quiz
+                            </button></a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="./checkout/checkout.html">
+                        <svg class="navSvg" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-basket"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.243 1.071a.5.5 0 0 1 .686.172l3 5a.5.5 0 1 1-.858.514l-3-5a.5.5 0 0 1 .172-.686zm-4.486 0a.5.5 0 0 0-.686.172l-3 5a.5.5 0 1 0 .858.514l3-5a.5.5 0 0 0-.172-.686z" />
+                            <path fill-rule="evenodd"
+                                d="M1 7v1h14V7H1zM.5 6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H.5z" />
+                            <path fill-rule="evenodd"
+                                d="M14 9H2v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9zM2 8a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a1 1 0 0 0-1-1H2z" />
+                            <path fill-rule="evenodd"
+                                d="M4 10a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+
+                    </a>
+                    <a href="">
+                        <svg class="navSvg" width="2em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div id="firstSession" class="carousel-item active">
+                <img src="Images/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="text">
+                    <h2>Beauty Shopping Made Personal</h2>
+                    <p>Discover your personalize skincare formulation in 3 minutes</p>
+                    <a class="startQuiz" href="#"><button class="quiz">
+                            Start Skin Quiz
+                        </button></a>
+                </div>
+            </div>
+
+            <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
+        </div>
+    </div>
+    <div class="dil-serv container">
+        <div class="Delivery">
+            <div class="deliDiv">
+                <div>
+                    <img src="./Images/icon1.jpg">
+                </div>
+                <div>
+                    <h6>Free Shipping <br> <span>for all order over $99</span> </h6>
+                </div>
+            </div>
+            <div class="deliDiv">
+                <div>
+                    <img src="./Images/icon2.jpg">
+                </div>
+                <div>
+                    <h6>Easy Payment <br> <span>Different Payment Method</span> </h6>
+                </div>
+            </div>
+            <div class="deliDiv">
+                <div>
+                    <img src="./Images/icon3.jpg">
+                </div>
+                <div>
+                    <h6>Secure Payment <br> <span>100% Secure Payment</span> </h6>
+                </div>
+            </div>
+            <div class="deliDiv lastdiv">
+                <div>
+                    <img src="./Images/icon4.jpg">
+                </div>
+                <div>
+                    <h6>24/7 Support <br> <span>Dedicated Support</span> </h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="work-con container">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div onmouseout="mouseOutStep('1')" onmouseover="stepsHover('1')" id="radius1"
+                class="radius animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">1</div>
+
+            <div class="line animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div id="line2"></div>
+            </div>
+
+            <div onmouseout="mouseOutStep('2')" onmouseover="stepsHover('2')" id="radius2"
+                class="radius animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">2</div>
+
+            <div class="line animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                <div id="line3"></div>
+            </div>
+
+            <div onmouseout="mouseOutStep('3')" onmouseover="stepsHover('3')" id="radius3"
+                class="radius animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">3</div>
+
+            <div class="line animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+                <div id="line4"></div>
+            </div>
+
+            <div onmouseout="mouseOutStep('4')" onmouseover="stepsHover('4')" id="radius4"
+                class="radius animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">4</div>
+        </div>
+        <div class="work">
+            <div id="workDiv1" onmouseout="mouseOutStep('1')" onmouseover="stepsHover('1')"
+                class="animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <img id="withoutHover1" src="Images/how1.png" alt="">
+                <img id="hover1" src="Images/stepHover2.png" alt="">
+
+                <div class="work-text">
+                    <h6>Step 01</h6>
+                    <p>Take a simple quiz and we will create you a simple skin profile.</p>
+
+                </div>
+            </div>
+            <div id="workDiv2" onmouseout="mouseOutStep('2')" onmouseover="stepsHover('2')"
+                class="animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <img id="withoutHover2" src="Images/how2.png" alt="">
+                <img id="hover2" src="Images/stepHover3.png" alt="">
+
+                <div class="work-text">
+                    <h6>Step 02</h6>
+                    <p>Veiw recomended product based on your profile.</p>
+
+                </div>
+            </div>
+            <div id="workDiv3" onmouseout="mouseOutStep('3')" onmouseover="stepsHover('3')"
+                class="animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                <img id="withoutHover3" src="Images/how3.png" alt="">
+                <img id="hover3" src="Images/stepHover1.png" alt="">
+
+                <div class="work-text">
+                    <h6>Step 03</h6>
+                    <p>Buy your regieme disigned only for you</p>
+
+                </div>
+            </div>
+            <div id="workDiv4" onmouseout="mouseOutStep('4')" onmouseover="stepsHover('4')"
+                class="animated wow fadeInUp"
+                style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+                <img id="withoutHover4" src="Images/how4.png" alt="">
+                <img id="hover4" src="Images/stepHover4.png" alt="">
+
+                <div class="work-text">
+                    <h6>Step 04</h6>
+                    <p>Come back and refill for extra 10% off.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="banner container-fluid">
+        <div class="video">
+            <img src="Images/video.jpg" alt="" width="405px">
+        </div>
+        <div class="whyWe">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li><i class="fas fa-check"></i>They will get curated skin products for them</li>
+                <li><i class="fas fa-check"></i>Personalized regime card</li>
+                <li><i class="fas fa-check"></i>Skin profile to track</li>
+                <li><i class="fas fa-check"></i>100% safe for your skin</li>
+                <li><i class="fas fa-check"></i>Other Points</li>
+                <li><i class="fas fa-check"></i>Special gifts & offers for you</li>
+            </ul>
+            <div class="butHeight">
+                <button class="but">
+                    Start Skin Quiz
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="curate-con container">
+        <h2>How We Curate Products</h2>
+        <div class="curate">
+            <div class="cream">
+                <div class="roundtick" style="border-radius: 50%; width: 30px;">
+                    <div class="innercircle"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                        </svg></div>
+                </div>
+                <div class="cream-img" width="208" style="background-image: url(Images/cream.jpg);">
+                </div>
+                <h6>Dry Skin Draper Cream</h6>
+                <p>There are many of passages.</p>
+                <hr>
+                <ul>
+                    <li>Review <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                    <li><i class="far fa-heart"></i> Wishlish</li>
+                </ul>
+            </div>
+            <div class="match" id="match">
+
+                <div class="pie_progress" role="progressbar" data-goal="98" aria-valuenow="0">
+                    <div class="pie_progress__number">0/100</div>
+                    <div class="pie_progress__label">matching score</div>
+                </div>
+
+                <div class="dash">
+                    <div class="dash1"></div>
+                    <div class="dashh"></div>
+                    <div class="dashh mobileHide"></div>
+                    <div class="dashh"></div>
+                    <div class="dashh"></div>
+                    <div class="dash1"></div>
+                    <div class="dott2"></div>
+                </div>
+                <p class="p">See how well each product matches your skin needs.</p>
+            </div>
+            <div class="progres-div">
+                <div>
+                    <div class="d-flex progres-div-div">
+                        <label>Acne</label>
+                        <p>89%</p>
+                    </div>
+                    <div class="progress">
+                        <div id="progress1" class="progress-bar wow p1" role="progressbar" aria-valuenow="89"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex progres-div-div">
+
+                        <label>Dark Spots</label>
+                        <p>76%</p>
+                    </div>
+                    <div class="progress">
+                        <div id="progress2" class="progress-bar wow p2" role="progressbar" aria-valuenow="76"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex progres-div-div">
+
+                        <label>hyperpigmentation</label>
+                        <p>75%</p>
+                    </div>
+                    <div class="progress">
+                        <div id="progress3" class="progress-bar p3 " role="progressbar" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex progres-div-div">
+
+                        <label>Wrinkles</label>
+                        <p>54%</p>
+                    </div>
+                    <div class="progress">
+                        <div id="progress4" class="progress-bar p4 " role="progressbar" aria-valuenow="54"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex progres-div-div">
+
+                        <label>Dehydrated</label>
+                        <p>67%</p>
+                    </div>
+                    <div class="progress">
+                        <div id="progress5" class="progress-bar p5 " role="progressbar" aria-valuenow="67"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="progressDashDivMain">
+                    <div class="progressDashDiv">
+                        <div class="progressDash1"></div>
+                        <div class="progressDash"></div>
+                        <div class="progressDash"></div>
+                        <div class="progressDott"></div>
+                    </div>
+                    <p class="p">See how well each product matches your skin needs.</p>
+                </div>
+            </div>
+            <!-- <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="margin-top:10px">
+                <div class="row d-flex">
+                    <div class="col">
+                        <p align="left" class="text-left">Acne</p>
+                    </div>
+                    <div class="col">
+                        <p align="right" class="text-right">89%</p>
+                    </div>
+                </div>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="row d-flex">
+                    <div class="col">
+                        <p align="left" class="text-left">Dark Spots</p>
+                    </div>
+                    <div class="col">
+                        <p align="right" class="text-right">76%</p>
+                    </div>
+                </div>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="row d-flex">
+                    <div class="col">
+                        <p align="left" class="text-left">Hyperpigmentation</p>
+                    </div>
+                    <div class="col">
+                        <p align="right" class="text-right">75%</p>
+                    </div>
+                </div>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="row d-flex">
+                    <div class="col">
+                        <p align="left" class="text-left">Wrinkles</p>
+                    </div>
+                    <div class="col">
+                        <p align="right" class="text-right">54%</p>
+                    </div>
+                </div>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="row d-flex">
+                    <div class="col">
+                        <p align="left" class="text-left">Dehydrated</p>
+                    </div>
+                    <div class="col">
+                        <p align="right" class="text-right">67%</p>
+                    </div>
+                </div>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <center>
+                    <img src="line-2.png">
+                    <p style="color:#000">View data on how each product <br /> tackles your skin concerns</p>
+                </center>
+
+            </div> -->
+
+        </div>
+
+    </div>
+
+    <div class="smallbanner container-fluid">
+
+        <div class="smallBannerImageDiv1" id="imageDiv1" onmouseover="imageHover('1')" onmouseout="imageHoverOut('1')">
+            <div id="smOne1" class="smOne"></div>
+            <div id="smTwo1" class="smTwo"></div>
+        </div>
+
+        <div class="smallBannerImageDiv2" id="imageDiv2" onmouseover="imageHover('2')" onmouseout="imageHoverOut('2')">
+            <div id="smOne2" class="smOne"></div>
+            <div id="smTwo2" class="smTwo"></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="just-Ariv">
+        <h2>Just Arrived</h2>
+        <div class="products-carts">
+            <div class="product-btn">
+                <a class="previous"><i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div>
+
+
+
+                <section class="product-slider slider">
+                    <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                        <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                            <div id="hoverDiv1" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product" onmouseover="hoverImage('2')" onmouseout="hoverOutImage('2')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv2" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quisck View</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="product" onmouseover="hoverImage('3')" onmouseout="hoverOutImage('3')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv3" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quisck View</button>
+                        </div>
+                    </div>
+
+
+                    <div class="product" onmouseover="hoverImage('4')" onmouseout="hoverOutImage('4')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv4" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product" onmouseover="hoverImage('5')" onmouseout="hoverOutImage('5')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv5" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product" onmouseover="hoverImage('6')" onmouseout="hoverOutImage('6')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv6" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+
+                    <div class="product" onmouseover="hoverImage('7')" onmouseout="hoverOutImage('7')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv7" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+            <div class="product-btn">
+                <a class="nextt"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="carousel-example" class="carousel slide hidden-xs div1" data-ride="carousel" data-type="multi"
+            style="position: inherit;">
+
+            <div class="carousel-inner">
+                <div class="controlProduct">
+                    <a class=" btn " href="#carousel-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class=" btn" href="#carousel-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="carousel-item active">
+                    <div class="product-div">
+                        <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                            <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                                <div id="hoverDiv1" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+
+
+                        <div class="product" onmouseover="hoverImage('2')" onmouseout="hoverOutImage('2')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                             <img src="Images/p4.jpg" alt=""> -->
+    <!-- <div id="hoverDiv2" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+
+
+                        <div class="product" onmouseover="hoverImage('3')" onmouseout="hoverOutImage('3')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                <div id="hoverDiv3" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quisck View</button>
+                            </div>
+                        </div>
+
+
+                        <div class="product" onmouseover="hoverImage('4')" onmouseout="hoverOutImage('4')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                <div id="hoverDiv4" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="product-div">
+                        <div class="product" onmouseover="hoverImage('5')" onmouseout="hoverOutImage('5')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                <div id="hoverDiv5" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+
+
+                        <div class="product" onmouseover="hoverImage('6')" onmouseout="hoverOutImage('6')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                <div id="hoverDiv6" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+
+
+                        <div class="product" onmouseover="hoverImage('7')" onmouseout="hoverOutImage('7')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                <div id="hoverDiv7" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quisck View</button>
+                            </div>
+                        </div>
+
+
+                        <div class="product" onmouseover="hoverImage('8')" onmouseout="hoverOutImage('8')">
+                            <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                <div id="hoverDiv8" class="hoverDiv">
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="hoverI">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <h6>Radiance Compact</h6>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                            </div>
+                            <hr>
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+
+    <div id="carousel-example2" class="carousel slide hidden-xs div2" data-ride="carousel" data-type="multi"
+        style="position: inherit;">
+
+        <div class="carousel-inner">
+            <div class="controlProduct">
+                <a class=" btn " href="#carousel-example2" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                <a class=" btn" href="#carousel-example2" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="carousel-item active">
+                <div class="product-div-2">
+                    <div class="product">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="product-div-2">
+                    <div class="product">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="jusrAriveButtton">
+        <button class="quiz">
+            <a href="./shop/shop.html">
+                Show More
+            </a>
+
+        </button>
+    </div>
+    </div>
+    <div class="banner1 one container-fluid">
+    </div>
+    <div class="banner1 two container-fluid">
+        <div class="banner1-text">
+            <h5>Discover a beautiful you with our new<br>
+                Makeup Essentials</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="skinQuizBut">
+                <button class="quiz">Start Skin Quiz</button> <button class="shopNow"><a href="./shop/shop.html">Shop
+                        Now</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="brands container mobileSilder">
+        <h2>Brand We Trust</h2>
+
+        <div id="carousel-example4" class="carousel slide hidden-xs" data-ride="carousel" data-type="multi"
+            style="position: inherit;">
+            <div class="carousel-inner">
+                <div class="controlProduct">
+                    <a class=" btn " href="#carousel-example4" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class=" btn" href="#carousel-example4" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class=" carousel-item active"><img class="sliderimage" src="Images/brandlogo1.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo2.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo3.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo4.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo1.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo2.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo3.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo4.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo3.jpg"></div>
+                <div class=" carousel-item"><img class="sliderimage" src="Images/brandlogo4.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="brandlogo container webSilder">
+        <h2>Brand We Trust</h2>
+        <div class="logos">
+            <div class="logbtn">
+                <a class="prev"><i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div>
+                <section class="customer-logos slider">
+                    <div class="slide"><img src="Images/brandlogo1.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo2.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo3.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo4.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo1.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo2.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo3.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo4.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo3.jpg"></div>
+                    <div class="slide"><img src="Images/brandlogo4.jpg"></div>
+
+                </section>
+            </div>
+            <div class="logbtn">
+                <a class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="banner2 container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide  banner2-text carousel-style-change"
+            data-ride="carousel">
+            <!--<div class="carousel-indicators image_with_slider">-->
+            <!--<i class="fa fa-chevron-left" aria-hidden="true"></i>-->
+            <div class="carousel-indicators image_with_slider team">
+                <div data-target="#carouselExampleIndicators" data-slide-to="0" class="team-img light active">
+                    <img src="Images/testi.jpg" alt="">
+                </div>
+                <div data-target="#carouselExampleIndicators" data-slide-to="1" class="team-img light">
+                    <img src="Images/test2.jpg" alt="">
+                </div>
+                <div data-target="#carouselExampleIndicators" data-slide-to="2" class="team-img light">
+                    <img src="Images/test3.jpg" alt="">
+                </div>
+            </div>
+            <!--<i class="fa fa-chevron-right" aria-hidden="true"></i>-->
+            <!--</div>-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <h1>”</h1>
+
+                    <p id="first1">Had a massage at deep by the training student ,very professional ,
+                        very relaxing and felt very comfortable throughout the treatment ,
+                        the salon is always immaculately clean ,friendly and I would recommend this salon 100% <br>
+
+                        <span></span> <span class="olie">Ollie Schneider</span> &nbsp; -&nbsp; <span></span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i></li> <br>
+                        CEO DeerCreative
+                    </p>
+                    <!--<div class='image_with_slider'>
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						<div class="team ">
+							<div class="team-img big">
+								<img src="Images/testi.jpg" alt="">
+							</div>
+							<div class="team-img light">
+								<img src="Images/test2.jpg" alt="">
+							</div>
+							<div class="team-img light">
+								<img src="Images/test3.jpg" alt="">
+							</div>
+						</div>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</div>-->
+                </div>
+                <div class="carousel-item ">
+
+                    <h1>”</h1>
+
+                    <p id="first1">Had a massage at deep by the training student ,very professional ,
+                        very relaxing and felt very comfortable throughout the treatment ,
+                        the salon is always immaculately clean ,friendly and I would recommend this salon 100% <br>
+
+                        <span></span> <span class="olie">Ollie Schneider</span> &nbsp; -&nbsp; <span></span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i></li> <br>
+                        CEO DeerCreative
+                    </p>
+                    <!--<div class='image_with_slider'>
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						<div class="team ">
+							<div class="team-img light">
+								<img src="Images/testi.jpg" alt="">
+							</div>
+							<div class="team-img big">
+								<img src="Images/test2.jpg" alt="">
+							</div>
+							<div class="team-img light">
+								<img src="Images/test3.jpg" alt="">
+							</div>
+						</div>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</div>-->
+                </div>
+                <div class="carousel-item ">
+
+                    <h1>”</h1>
+
+                    <p id="first1">Had a massage at deep by the training student ,very professional ,
+                        very relaxing and felt very comfortable throughout the treatment ,
+                        the salon is always immaculately clean ,friendly and I would recommend this salon 100% <br>
+
+                        <span></span> <span class="olie">Ollie Schneider</span> &nbsp; -&nbsp; <span></span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i></li> <br>
+                        CEO DeerCreative
+                    </p>
+                    <!--<div class='image_with_slider'>
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						<div class="team ">
+							<div class="team-img light">
+								<img src="Images/testi.jpg" alt="">
+							</div>
+							<div class="team-img light">
+								<img src="Images/test2.jpg" alt="">
+							</div>
+							<div class="team-img big">
+								<img src="Images/test3.jpg" alt="">
+							</div>
+						</div>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</div>-->
+                </div>
+
+            </div>
+            <a class="carousel-control-prev top-16" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                <i class="fa fa-chevron-left " aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next top-16" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                <i class="fa fa-chevron-right " aria-hidden="true"></i>
+
+                <span class="sr-only">Next</span>
+            </a>
+            <div class="team1">
+                <div class="team-img big">
+                    <img src="Images/test2.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="blog container webBlog">
+        <h2>Latest Blog</h2>
+        <div class="blog-div">
+            <div class="blogCard">
+                <div class="blogImg">
+                    <img src="Images/blog1.jpg" alt="">
+
+
+                </div>
+                <div class="blogDetail">
+                    <p class="blogTitle">News</p>
+                    <a href="#">
+                        <p>The De-Stress Massage And Body Cocoon</p>
+                    </a>
+                    <p class="nameDate">Gary Coleman | 21june </p>
+                </div>
+
+            </div>
+            <div class="blogCard">
+                <div class="blogImg">
+                    <img src="Images/blog2.jpg" alt="">
+
+
+                </div>
+                <div class="blogDetail">
+                    <p class="blogTitle">Event</p>
+                    <a href="#">
+                        <p>The Personalized Ocean And Earth Body Wrap</p>
+                    </a>
+                    <p class="nameDate">Gary Coleman | 21june </p>
+                </div>
+
+            </div>
+            <div class="blogCard">
+                <div class="blogImg">
+                    <img src="Images/blog3.jpg" alt="">
+
+
+                </div>
+                <div class="blogDetail">
+                    <p class="blogTitle">News</p>
+                    <a href="#">
+                        <p>The Balance & Harmony of Body and Mind</p>
+                    </a>
+                    <p class="nameDate">Gary Coleman | 21june </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="blog container mobileBlog">
+        <h2>Latest Blog</h2>
+        <div class="blog-div">
+
+            <div id="carousel-example5" class="carousel slide hidden-xs" data-ride="carousel" data-type="multi"
+                style="position: inherit;">
+                <div class="carousel-inner">
+                    <!-- <div class="controlProduct">
+                        <a class=" btn " href="#carousel-example5" data-slide="prev"><i
+                                class="fas fa-chevron-left"></i></a>
+                        <a class=" btn" href="#carousel-example5" data-slide="next"><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div> -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example5" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example5" data-slide-to="1"></li>
+                        <li data-target="#carousel-example5" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class=" carousel-item active">
+                        <div class="blogCard">
+                            <div class="blogImg">
+                                <img src="Images/blog1.jpg" alt="">
+                            </div>
+                            <div class="blogDetail">
+                                <p class="blogTitle">News</p>
+                                <a href="#">
+                                    <p>The De-Stress Massage And Body Cocoon</p>
+                                </a>
+                                <p class="nameDate">Gary Coleman | 21june </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="blogCard">
+                            <div class="blogImg">
+                                <img src="Images/blog2.jpg" alt="">
+                            </div>
+                            <div class="blogDetail">
+                                <p class="blogTitle">Event</p>
+                                <a href="#">
+                                    <p>The Personalized Ocean And Earth Body Wrap</p>
+                                </a>
+                                <p class="nameDate">Gary Coleman | 21june </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="blogCard">
+                            <div class="blogImg">
+                                <img src="Images/blog3.jpg" alt="">
+                            </div>
+                            <div class="blogDetail">
+                                <p class="blogTitle">News</p>
+                                <a href="#">
+                                    <p>The Balance & Harmony of Body and Mind</p>
+                                </a>
+                                <p class="nameDate">Gary Coleman | 21june </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-con container-fluid">
+
+            <div class="footer">
+                <div class="innerFooter  ">
+                    <div class="det-con">
+                        <div class="details ">
+                            <img class="footerlogo" src="Images/ftlogo.jpg" alt="">
+                            <p class="comapany-detail">Wequity aims responsible investing more accessible and
+                                impactful.
+                            </p>
+                            <a class="facebook" href="#"> <i class="fab fa-facebook-f"></i> </a>
+                            <a class="twitter" href="#"> <i class="fab fa-twitter"></i> </a>
+                            <a class="google+" href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            <a class="insta" href="#"> <i class="fab fa-instagram"></i></i> </a>
+
+                        </div>
+                        <div class="contact ">
+                            <h6 class="cont-heading">CONTACT US</h6>
+                            <ul>
+                                <li class="cont-link"> 002-6666-8888 </li>
+                                <li class="cont-link"> info.abc@gmail.com </li>
+                                <li class="cont-link"> 40 Abc Street 133/2 </li>
+                                <li class="cont-link"> NewYork City </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="news-pic">
+                        <div class="newsletter ">
+                            <h6 class="news-heading"> OUR NEWSLETTER </h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Email"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        id="button-addon2">SUBSCRIBE</button>
+                                </div>
+                            </div>
+                            <p>Subscribe to our mailing list to get the updates to your email inbox.</p>
+
+                        </div>
+                        <div class="pictures ">
+                            <div>
+                                <img src="Images/ft1.jpg" alt="">
+                                <img src="Images/ft2.jpg" alt="">
+                                <img src="Images/ft3.jpg" alt="">
+                                <img src="Images/ft4.jpg" alt="">
+                                <img src="Images/ft3.jpg" alt="">
+                                <img src="Images/ft4.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright container-fluid">
+            <div class="copyright-text ">
+                <p>Copyright ©2020 Glamate.</p>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a style="border: none !important;" href="">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+
+    <!-- All js plugins included in this file. -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+        // $(window).scroll(function () {
+        //     //     if ($('.progress .progress-bar').is(':appeared')) {
+        //     //         $('.progress .progress-bar').css("width", function () {
+        //     //             return $(this).attr("aria-valuenow") + "%";
+        //     //         });
+        //     //     }
+
+        //     $(".progres-div").each(function () {
+        //         var progressBar = $(".progress-bar");
+        //         progressBar.each(function (indx) {
+        //             $(this).css("width", $(this).attr("aria-valuenow") + "%");
+        //         });
+        //     });
+        // });
+        // window.onload = function () {
+        //     setTimeout(() => {
+
+
+        //         //hide the preloader
+        //         $('.loading').fadeOut('fast', function () {
+        //             console.log("running")
+
+        //             $('.dcontent').fadeIn('fast');
+        //         });
+        //     }
+        //         , 2000)
+        // }
+
+        // setTimeout(() => {
+
+        $(".progres-div").each(function () {
+            $(this).waypoint(function () {
+                var progressBar = $(".progress-bar");
+                progressBar.each(function (indx) {
+                    $(this).css("width", $(this).attr("aria-valuenow") + "%");
+                });
+            }, {
+                triggerOnce: true,
+                offset: '50%'
+            });
+        });
+        // }, 2000)
+    </script>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // var firebaseConfig = {
+    //     apiKey: "AIzaSyAqtvn2IPBqON04Mnpzmv8MJPZMKcNIcyw",
+    //     authDomain: "glamat3.firebaseapp.com",
+    //     databaseURL: "https://glamat3.firebaseio.com",
+    //     projectId: "glamat3",
+    //     storageBucket: "glamat3.appspot.com",
+    //     messagingSenderId: "8302197181",
+    //     appId: "1:8302197181:web:ff4e5941ef06732d697ad4",
+    //     measurementId: "G-03VKFHCQ9M"
+    // };
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script type="text/javascript" src="./circle/js/jquery.js"></script>
+<script type="text/javascript" src="./circle/dist/jquery-asPieProgress.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('.pie_progress').asPieProgress({
+            namespace: 'pie_progress'
+        });
+        // Example with grater loading time - loads longer
+        $('.pie_progress--slow').asPieProgress({
+            namespace: 'pie_progress',
+            goal: 1000,
+            min: 0,
+            max: 1000,
+            speed: 200,
+            easing: 'linear'
+        });
+        // Example with grater loading time - loads longer
+        $('.pie_progress--countdown').asPieProgress({
+            namespace: 'pie_progress',
+            easing: 'linear',
+            first: 120,
+            max: 120,
+            goal: 0,
+            speed: 1200, // 120 s * 1000 ms per s / 100
+            numberCallback: function (n) {
+                var minutes = Math.floor(this.now / 60);
+                var seconds = this.now % 60;
+                if (seconds < 10) {
+                    seconds = '0' + seconds;
+                }
+                return minutes + ': ' + seconds;
+            }
+        });
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('match'),
+            handler: function (direction) {
+                $('.pie_progress').asPieProgress('start');
+            },
+            offset: '50%'
+        })
+    });
+</script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+</html>

@@ -1,0 +1,235 @@
+body {
+    background-color: rgb(238, 238, 238) !important;
+}
+.cat {
+    font-size: 17px;
+}
+
+.checkout-page {
+    padding: 30px;
+}
+.checkout-page label p {
+    font-size: 13px;
+}
+.checkout-page p {
+    padding-left: 30px;
+}
+.checkout-page a {
+    color: black;
+    text-align: left;
+}
+.checkout-page a:hover {
+    text-decoration: none;
+    color: #f47545;
+}
+.checkout-con h2 {
+    text-align: center;
+    padding: 20px;
+    background-image: url(Images/underline.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.check-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.check-div h6 {
+    font-size: 16px;
+}
+.bill-address h6 {
+    text-align: center;
+    border-bottom: 1px rgba(0, 0, 0, 0.11) solid;
+    padding: 10px;
+    font-weight: 600;
+}
+.bill-address p {
+    color: #7d7b7b;
+}
+.bill-address {
+    background-color: white;
+    width: 68%;
+    padding: 10px;
+}
+.bill-address input {
+    float: right;
+    width: 60%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11) ;
+}
+
+.bill-address div {
+    margin: 30px 0px;
+    height: 30px;
+}
+.optional {
+    margin-top: 20px;
+}
+.town {
+    margin-top: 90px !important;
+}
+.pro-order {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 480px; */
+}
+
+.pro-order p {
+    font-size: 13px;
+    margin: 5px 0px;
+    padding: 10px 0px 20px;
+}
+.pro-order h6 {
+    padding: 10px 0px;
+    border-bottom: 1px rgba(0, 0, 0, 0.13) solid;
+    font-weight: 600;
+}
+.code {
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+.code input {
+    width: 140px;
+    height: 35px;
+    border: none;
+    outline: none;
+    /* padding-bottom: 20px; */
+    border-bottom: 1px rgba(0, 0, 0, 0.13) solid;
+
+    text-align: center;
+    font-size: 15px;
+}
+.code .couponCodeButton{
+    height: 50px;
+}
+.code button {
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 20px;
+    background-color: #f47545;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.425) 2px 2px 10px 1px;
+    margin-top: 5px;
+    transition: 0.3s !important;
+}
+
+.code .couponCodeMain,.button{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.code button:hover {
+    margin-top: 0;
+}
+.yourOrder {
+    background-color: white;
+    padding: 10px;
+    height: 75%;
+}
+.total {
+    text-align: left;
+}
+.total h6 {
+    font-size: 13px;
+    border: none;
+    font-weight: 600;
+}
+.total span {
+    float: right;
+    color: #f47545;
+}
+.total p {
+    border-bottom: 1px rgba(0, 0, 0, 0.13) solid;
+    padding: 27px 0px 3px 0px;
+}
+.order-payment {
+    flex-direction: column;
+    display: flex;
+    color: #7d7b7b;
+    margin-top: 10px;
+}
+.order-payment label {
+    padding: 4px !important;
+}
+.placeorder-btn {
+    color: white;
+    background-color: #f47545;
+    border: none;
+    /* width: 40px; */
+    padding: 3px 10px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.425) 2px 2px 10px 1px;
+    font-size: 11px;
+
+    padding: 5px 31px;
+}
+.button {
+    text-align: center;
+    padding: 18px 0px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .yourOrder {
+        height: 72%;
+    }
+    .bill-address {
+        width: 63%;
+    }
+    .bill-address p {
+        padding: 7px;
+    }
+    .pro-order {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .check-div {
+        flex-direction: column;
+    }
+
+    .bill-address {
+        width: 100%;
+    }
+    .pro-order {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .yourOrder {
+        margin-top: 20px;
+    }
+    .bill-address p {
+        padding: 1px;
+        font-size: 13px;
+    }
+    .bill-address input {
+        font-size: 12px;
+        width: auto;
+    }
+    .yourOrder {
+        height: 555px !important;
+    }
+}
+@media screen and (max-width: 345px) {
+    .bill-address p {
+        padding: 1px;
+        font-size: 12px;
+    }
+    .bill-address input {
+        font-size: 11px;
+        width: auto;
+    }
+}
+.pro-order .button:hover{
+    margin-top: -5px !important;
+}

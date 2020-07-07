@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2c36b1428e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topBar">
+        <div class="topBar-con container">
+
+            <div class="row">
+                <p> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                    </svg>+1(917)4709709</p>
+                <p> <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg> mail@domain.com </a> </p>
+            </div>
+            <div>
+                <span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Images/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="one" class="nav-item dropdown" onmouseover="dropdown(`1`)" onmouseout="dropdownOut(`1`)">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Skin Care &nbsp; <img src="../Images/droparrow.jpg">
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cleansers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Exfoilators</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eye Treatments</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Face Oils</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Lip Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Masks & Peels</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Moisturisers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Serums</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Spot Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Toners</a>
+                        </div>
+
+                        <div id="1" class="droppdownn">
+                            <img src="../Images/uppp.jpg">
+                            <div class="first">
+                                <div>Cleansers</div>
+                                <div>Exfoilators</div>
+                                <div>Eye Treatments</div>
+                                <div>Face Oils</div>
+                                <div>Lip Treatment</div>
+                            </div>
+                            <div class="second">
+                                <div>Masks & Peels</div>
+                                <div>Moisturisers</div>
+                                <div>Serums</div>
+                                <div>Spot Treatment</div>
+                                <div>Toners</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="two" class="nav-item dropdown" onmouseover="dropdown(`2`)" onmouseout="dropdownOut(`2`)">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Brands &nbsp; <img src="../Images/droparrow.jpg">
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cleansers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Exfoilators</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Eye Treatments</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Face Oils</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Lip Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Masks & Peels</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Moisturisers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Serums</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Spot Treatment</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Toners</a>
+                        </div>
+
+                        <div id="2" class="droppdownn2">
+                            <img src="../Images/uppp.jpg">
+                            <div class="first">
+                                <div>Cleansers</div>
+                                <div>Exfoilators</div>
+                                <div>Eye Treatments</div>
+                                <div>Face Oils</div>
+                                <div>Lip Treatment</div>
+                            </div>
+                            <div class="second">
+                                <div>Masks & Peels</div>
+                                <div>Moisturisers</div>
+                                <div>Serums</div>
+                                <div>Spot Treatment</div>
+                                <div>Toners</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item startQuiz">
+                        <a style="border: none;" class="nav-link" href="#"><button class="quiz">
+                                Start Skin Quiz
+                            </button></a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="../checkout/checkout.html">
+                        <svg class="navSvg" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-basket" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.243 1.071a.5.5 0 0 1 .686.172l3 5a.5.5 0 1 1-.858.514l-3-5a.5.5 0 0 1 .172-.686zm-4.486 0a.5.5 0 0 0-.686.172l-3 5a.5.5 0 1 0 .858.514l3-5a.5.5 0 0 0-.172-.686z"/>
+                            <path fill-rule="evenodd" d="M1 7v1h14V7H1zM.5 6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H.5z"/>
+                            <path fill-rule="evenodd" d="M14 9H2v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9zM2 8a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a1 1 0 0 0-1-1H2z"/>
+                            <path fill-rule="evenodd" d="M4 10a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                          </svg>
+                        
+                    </a>
+                    <a href="">
+                    <svg class="navSvg" width="2em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page container">
+        <p><a href="../index.html">Home</a>/ <a href="shop.html">Shop</a></p>
+        <div class="shop-con">
+            <h2>Lip Treatment</h2>
+            <h6>John's Recommendation</h6>
+            <div class="rec-div">
+                <div class="product webProDuct" onmouseover="hoverImage('7')" onmouseout="hoverOutImage('7')">
+                    <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                        <div id="hoverDiv7" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                    <hr>
+                    <div class="button-div">
+                        <button>Quick View</button>
+                    </div>
+                </div>
+                <div class="product webProDuct" onmouseover="hoverImage('8')" onmouseout="hoverOutImage('8')">
+                    <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                        <div id="hoverDiv8" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                    <hr>
+                    <div class="button-div">
+                        <button>Quisck View</button>
+                    </div>
+                </div>
+
+
+
+                <div class="product webProDuct" onmouseover="hoverImage('9')" onmouseout="hoverOutImage('9')">
+                    <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                        <div id="hoverDiv9" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                    <hr>
+                    <div class="button-div">
+                        <button>Quisck View</button>
+                    </div>
+                </div>
+
+                <div id="carousel-example2" class="carousel slide hidden-xs div2" data-ride="carousel" data-type="multi"
+                style="position: inherit;">
+        
+                <div class="carousel-inner">
+                    <div class="controlProduct">
+                        <a class=" btn " href="#carousel-example2" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                        <a class=" btn" href="#carousel-example2" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+        
+                    <div class="carousel-item active">
+                        <div class="product-div-2">
+                            <div class="product">
+                                <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                </div>
+                                <div class="product-txt">
+                                    <h6>Radiance Compact</h6>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                    <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                                </div>
+                                <hr>
+                                <div class="button-div">
+                                    <button>Quick View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="product-div-2">
+                            <div class="product">
+                                <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                                </div>
+                                <div class="product-txt">
+                                    <h6>Radiance Compact</h6>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                    <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                                </div>
+                                <hr>
+                                <div class="button-div">
+                                    <button>Quick View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div> 
+            </div>
+
+        </div>
+        <div class="allProducts">
+            <h2>All Products</h2>
+            <div class="cat-pro">
+
+                <div class="categories ">
+                    <div class="byPrice mobileHIde">
+                        <h6>By Price</h6>
+                        <div>
+
+                            <label class="check">High-To-Low
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">Low-To-High
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="byCategories mobileHIde">
+                        <h6>By Category</h6>
+                        <div>
+                            <label class="check">Shop By Concern (989)
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">Body Care
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">Sun Care (50)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">Moisturisers (280)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label><label class="check">Toner (300)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label><label class="check">Eye Care (60)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="byBrand mobileHIde">
+                        <h6>By Brands</h6>
+                        <div>
+                            <input type="text" class="search" placeholder="Search Brands">
+                            <label class="check">Innisfree (90)
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">The Body Shop (261)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">WOW (350)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check">VLCC (124)
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label><label class="check">
+                                <input type="checkbox"> Lotus Herbal (350)
+                                <span class="checkmark"></span>
+                            </label><label class="check">
+                                <input type="checkbox">Niconi (160)
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+<button type="button" class="webhide btn " data-toggle="modal" data-target="#exampleModalLong">
+   <p> FILTER</p>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="byPrice">
+                <h6>By Price</h6>
+                <div>
+
+                    <label class="check">High-To-Low
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">Low-To-High
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="byCategories">
+                <h6>By Category</h6>
+                <div>
+                    <label class="check">Shop By Concern (989)
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">Body Care
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">Sun Care (50)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">Moisturisers (280)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label><label class="check">Toner (300)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label><label class="check">Eye Care (60)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </div>
+            </div>
+            <div class="byBrand ">
+                <h6>By Brands</h6>
+                <div>
+                    <input type="text" class="search" placeholder="Search Brands">
+                    <label class="check">Innisfree (90)
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">The Body Shop (261)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">WOW (350)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">VLCC (124)
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label><label class="check">
+                        <input type="checkbox"> Lotus Herbal (350)
+                        <span class="checkmark"></span>
+                    </label><label class="check">
+                        <input type="checkbox">Niconi (160)
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                </div>
+                <div class="shopProducts">
+                    <div class="webpro">
+                    <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                        <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                            <div id="hoverDiv1" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product" onmouseover="hoverImage('2')" onmouseout="hoverOutImage('2')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv2" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quisck View</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="product" onmouseover="hoverImage('3')" onmouseout="hoverOutImage('3')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv3" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quisck View</button>
+                        </div>
+                    </div>
+                    <div class="product" onmouseover="hoverImage('4')" onmouseout="hoverOutImage('4')">
+                        <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                            <div id="hoverDiv4" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product" onmouseover="hoverImage('5')" onmouseout="hoverOutImage('5')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv5" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quisck View</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="product" onmouseover="hoverImage('6')" onmouseout="hoverOutImage('6')">
+                        <div class="product-img" style="background-image: url(Images/p4.jpg);">
+                            <div id="hoverDiv6" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                        <hr>
+                        <div class="button-div">
+                            <button>Quisck View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile view -->
+                <div class="mobviewpro">
+                  <div class="productDiv">
+                    <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                        <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                            <div id="hoverDiv1" class="hoverDiv">
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                                <div class="hoverI">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <h6>Radiance Compact</h6>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                        </div>
+                    </div>
+                        
+                            <div class="button-div">
+                                <button>Quick View</button>
+                            </div>
+                </div>
+           
+            <div class="productDiv">
+                <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                    <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                        <div id="hoverDiv1" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                </div>
+                    
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+            </div>
+            <div class="productDiv">
+                <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                    <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                        <div id="hoverDiv1" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                </div>
+                    
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+            </div>
+            <div class="productDiv">
+                <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                    <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                        <div id="hoverDiv1" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                </div>
+                    
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+            </div>
+            <div class="productDiv">
+                <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                    <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                        <div id="hoverDiv1" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                </div>
+                    
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+            </div>
+            <div class="productDiv">
+                <div class="product" onmouseover="hoverImage('1')" onmouseout="hoverOutImage('1')">
+                    <div style="background-image: url(Images/p4.jpg)" class="product-img">
+                        <div id="hoverDiv1" class="hoverDiv">
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </div>
+                            <div class="hoverI">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt">
+                        <h6>Radiance Compact</h6>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="price"><s>$10.99</s> <span style="float: right;">$7.99</span></p>
+                    </div>
+                </div>
+                    
+                        <div class="button-div">
+                            <button>Quick View</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <footer>
+        <div class="footer-con container-fluid">
+
+            <div class="footer">
+                <div class="innerFooter  ">
+                    <div class="det-con">
+                        <div class="details ">
+                            <img class="footerlogo" src="Images/ftlogo.jpg" alt="">
+                            <p class="comapany-detail">Wequity aims responsible investing more accessible and
+                                impactful.
+                            </p>
+                            <a class="facebook" href="#"> <i class="fab fa-facebook-f"></i> </a>
+                            <a class="twitter" href="#"> <i class="fab fa-twitter"></i> </a>
+                            <a class="google+" href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            <a class="insta" href="#"> <i class="fab fa-instagram"></i></i> </a>
+
+                        </div>
+                        <div class="contact ">
+                            <h6 class="cont-heading">CONTACT US</h6>
+                            <ul>
+                                <li class="cont-link"> 002-6666-8888 </li>
+                                <li class="cont-link"> info.abc@gmail.com </li>
+                                <li class="cont-link"> 40 Abc Street 133/2 </li>
+                                <li class="cont-link"> NewYork City </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="news-pic">
+                        <div class="newsletter ">
+                            <h6 class="news-heading"> OUR NEWSLETTER </h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Email"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        id="button-addon2">SUBSCRIBE</button>
+                                </div>
+                            </div>
+                            <p>Subscribe to our mailing list to get the updates to your email inbox.</p>
+
+                        </div>
+                        <div class="pictures ">
+                            <div>
+                                <img src="Images/ft1.jpg" alt="">
+                                <img src="Images/ft2.jpg" alt="">
+                                <img src="Images/ft3.jpg" alt="">
+                                <img src="Images/ft4.jpg" alt="">
+                                <img src="Images/ft3.jpg" alt="">
+                                <img src="Images/ft4.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright container-fluid">
+            <div class="copyright-text ">
+                <p>Copyright ©2020 Glamate.</p>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a style="border: none !important;" href="">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+<script src="../Js/main.js"></script>
+<script src="../index.js"></script>
+<script src="../Js/plugins.js"></script>
+<script src="../Js/waypoints.min.js"></script>
+
+</html>

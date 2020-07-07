@@ -1,0 +1,30 @@
+.animation__style01 h2{
+    -webkit-animation: 800ms ease-in-out 0s normal none 1 running bounceInDown;
+            animation: 800ms ease-in-out 0s normal none 1 running bounceInDown;
+  }
+  
+  
+  .animation__style01 a{
+    -webkit-animation: 1600ms ease-in-out 0s normal none 1 running bounceInDown;
+            animation: 1600ms ease-in-out 0s normal none 1 running bounceInDown;
+  } 
+  
+  
+  .animation__style01 p{
+    -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
+            animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
+  } 
+  
+  /* .owl-item.active .single__slide.animation__style01 .slide__thumb{
+      -webkit-animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
+              animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
+  } */
+  
+  /* .owl-item.active .single__slide.animation__style01 h1{
+        -webkit-animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
+                animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
+      }  */
+
+.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;}
+@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px);}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}}
+@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}}
